@@ -1,0 +1,19 @@
+
+
+ 
+ .class{
+     background-color: firebrick;
+     height: 200px;
+ }
+ #abhay{
+     background-color: fuchsia;
+     min-height: fit-content;
+ }
+
+ .class2>div{
+     background-color: aqua;
+ }
+ div:hover{
+     background-color: darkgoldenrod;
+     height: 100px;
+ }

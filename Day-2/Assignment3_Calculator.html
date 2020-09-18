@@ -1,0 +1,54 @@
+<html>
+ 
+<head>
+TWO FIGURE CALCULATOR
+</head>
+<br>
+<br>
+ 
+<body>
+ 
+    Figure 1: <input type="text" id="a"><br><br>
+    Figure 2:<input type="text" id="b"><br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subration</button><br><br>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button><br><br>
+   
+    <p id="ans"></p>
+ 
+    
+    <script>
+ 
+        function add() {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var c = parseInt(a) + parseInt(b)
+            document.getElementById('ans').innerHTML = "Answer " + c
+        }
+        function sub(){
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var c = parseInt(a) - parseInt(b)
+            document.getElementById('ans').innerHTML="Answer " + c
+        }
+        function mul(){
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var c = parseInt(a) * parseInt(b)
+            document.getElementById('ans').innerHTML="Answer " + c
+        }
+        function div(){
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var c = parseInt(a) / parseInt(b)
+            document.getElementById('ans').innerHTML="Answer " + c
+        }
+
+        
+        
+ 
+    </script>
+</body>
+ 
+</html>

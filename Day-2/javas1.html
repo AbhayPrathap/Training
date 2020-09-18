@@ -1,0 +1,27 @@
+<html>
+ 
+<head>
+ 
+</head>
+ 
+<body>
+ 
+    a: <input type="text" id="a"><br><br>
+    b:<input type="text" id="b"><br>
+    <p id="ans"></p>
+ 
+    <button onclick="calculate()">Calculate</button>
+    <script>
+ 
+        function calculate() {
+            var a = document.getElementById("a").value
+            var b = document.getElementById("b").value
+            var c = parseInt(a) + parseInt(b)
+            document.getElementById('ans').innerHTML = c
+ 
+        }
+ 
+    </script>
+</body>
+ 
+</html>
