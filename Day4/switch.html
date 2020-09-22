@@ -1,0 +1,50 @@
+<html>
+
+<body>
+    Grade:<input type="text" id="G"> 
+    <button onclick="fingrade()">Find result</button>
+    <p id="des"></p>
+
+<script>
+    
+
+     function fingrade() {
+        var g = document.getElementById("G").value
+
+        switch (g) {
+            case 'A':
+                des = "You r passed"
+                break;
+            default:
+                des = "You r failed"
+        }
+        document.getElementById("des").innerHTML = des
+    }
+</script>
+</body>
+
+</html> 
+
+ <!-- <html>
+
+<body>
+    
+    <p id="des"></p>
+
+<script>
+    
+        var g = 'A'
+
+        switch (g) {
+            case 'A':
+                des = "You r passed"
+                break;
+            default:
+                des = "You r failed"
+        }
+        document.getElementById("des").innerHTML = des
+</script>
+</body>
+
+</html>   -->
+
