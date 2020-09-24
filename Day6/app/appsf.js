@@ -21,8 +21,8 @@ async function getApiData() {
     //         })
     //     }).catch(err => console.log(err))
     
-    getApiData().then(
+    getApiData().then(res=>{
         // res => {let us = res.filter(r=> r.userId == 1)
-        let extr=  res.filter(r => r.userId == 1 )
-            (console.log(us))
+        let sam =  res.filter(r => r.userId == 1 )
+            console.log(sam)
         }).catch(err => console.log(err))

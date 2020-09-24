@@ -5,7 +5,7 @@ example().then(
     res => console.log(res)
 )
 
-
+///////////////////////////////////////////////
 function getdata(){
     return new Promise(
         resolve => {
