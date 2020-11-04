@@ -1,0 +1,21 @@
+<html>
+<body>
+    Guess a number:<input type="number" id="num">
+    <button onclick="f1()" >Check</button>
+    <p id="ans"></p>
+</body>
+<script>
+function f1(){
+var arr = [1,2,3,4,5,6,7,8,9,10]
+var random = Math.floor(Math.random() * arr.length)
+var number = document.getElementById("num").value
+if(number==random){
+    document.getElementById("ans").innerHTML= "Good work"
+}
+else
+{
+    document.getElementById("ans").innerHTML="Not matched"
+}
+}
+</script>
+</html>

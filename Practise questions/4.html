@@ -1,0 +1,22 @@
+// Write a JavaScript program to get the difference between a given number and 13, 
+// if the number is greater than 13 return double the absolute difference.
+<html>
+    <br>
+<body>
+    Enter a Number:<input type="text" id="a">
+    <button onclick="f1()">Find</button>
+    <p id="ans"></p>
+    
+</body>
+<script>
+function f1(){
+var givenNumber = document.getElementById('a').value;
+if(givenNumber>13){
+    document.getElementById("ans").innerHTML= 'Answer is'+(2*givenNumber)
+}
+else{
+    document.getElementById("ans").innerHTML= 'Answer is'+(13-givenNumber)
+}
+}
+</script>
+</html>

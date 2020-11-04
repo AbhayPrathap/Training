@@ -14,3 +14,5 @@ em.on("first",f1)
 em.on("second",f2)
 
 em.emit("second")
+
+

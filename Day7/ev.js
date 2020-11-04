@@ -10,12 +10,13 @@ async function email() {
 email().then(res => {
     res.map(x => {
         x.postId += 10
-    
-    console.log(res)
-    var nm = res.name
+    })
+    var an = res.forEach(r=>{
+        console.log("postId="+ r.postId,"name="+ r.name)
+    })
 
-    console.log(nm)
-})
+    
+    
 }).catch(err => console.log(err))
 
 

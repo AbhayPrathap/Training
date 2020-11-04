@@ -1,0 +1,30 @@
+<!-- Write a JavaScript program to calculate multiplication and division of two numbers (input from user) -->
+<html>
+
+<body>
+    Number 1: <input type="text" id="a">
+    Number 2: <input type="text" id="b">
+    <button onclick="f1('*')">multiplication</button>
+    <button onclick="f1('/')">division</button>
+    <p id="ans"></p>
+</body>
+<script>
+    
+    function f1(pm) {
+        var ar = document.getElementById("a").value
+    var br = document.getElementById("b").value
+
+        switch (pm) {
+            case '*': {
+                document.getElementById("ans").innerHTML = "Answer is" + (ar * br)
+            }
+            break;
+            case "/": {
+                document.getElementById("ans").innerHTML = "Answer is" + (ar / br)
+            }
+            break;
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50
+<html>
+<br>
+<body>
+    Number 1: <input type="number" id="a">
+    Number 2: <input type="number" id="b">
+    <button onclick="c()">find</button>
+    <p id="ans"></p>
+</body>
+<script>
+    function c(){
+    var ar = document.getElementById("a").value
+    var br = document.getElementById("b").value
+    if((ar==50 || br==50 ) ||(ar+br == 50) ){
+        document.getElementById("ans").innerHTML = 'true'
+       
+    }
+}
+</script>
+<br>
+<br>
+
+</html>

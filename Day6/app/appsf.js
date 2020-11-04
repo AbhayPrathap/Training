@@ -1,12 +1,12 @@
-var fetch = require('node-fetch')
+// var fetch = require('node-fetch')
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-async function getApiData() {
-    let response = await fetch('https://jsonplaceholder.typicode.com/todos')
+// process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+// async function getApiData() {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/todos')
 
-    let user = await response.json()
-    return user
-}
+//     let user = await response.json()
+//     return user
+// }
 
 // getApiData().then(
 //     res => {if(res.userId ==1)
@@ -14,15 +14,33 @@ async function getApiData() {
 //         // console.log(res[0].title)
 //     }).catch(err => console.log(err))
 
-    // getApiData().then(
-    //     res => {
-    //         res.forEach(element=>{
-    //             console.log(element.title)
-    //         })
-    //     }).catch(err => console.log(err))
-    
-    getApiData().then(res=>{
-        // res => {let us = res.filter(r=> r.userId == 1)
-        let sam =  res.filter(r => r.userId == 1 )
-            console.log(sam)
-        }).catch(err => console.log(err))
+// getApiData().then(
+//     res => {
+//         res.forEach(element=>{
+//             console.log(element.title)
+//         })
+//     }).catch(err => console.log(err))
+
+// getApiData().then(res=>{
+//     // res => {let us = res.filter(r=> r.userId == 1)
+//     let sam =  res.filter(r => r.userId == 1 )
+//         console.log(sam)
+//     }).catch(err => console.log(err))
+
+
+/////////////////////////////////////////
+
+var fetch = require('node - fetch')
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
+async function getdata() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/todos')
+
+    let user = await response.json()
+    return user
+}
+
+getdata().then(res => {
+    // let s = res.filter(r => r.userId == 1)
+    console.log(res)
+}).catch(err => console.log(err))

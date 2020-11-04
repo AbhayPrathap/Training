@@ -1,0 +1,1 @@
+// Write a JavaScript function to convert a string into camel case.

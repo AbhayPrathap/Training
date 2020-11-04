@@ -44,6 +44,7 @@ async function parallelexe() {
             console.log(result[0])
             console.log(result[1])
         }
+        
     )
 }
 // sequentialFun()

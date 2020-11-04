@@ -1,0 +1,22 @@
+<html>
+<body>
+    Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7<br>
+    Enter number<input type="number" id="a">
+    <button onclick="c()" >find</button>
+    <p id="ans"></p>
+</body>
+<script>
+    function c(){
+var num = document.getElementById("a").value
+if(num %3 == 0 && num %7 == 0){
+    document.getElementById('ans').innerHTML = 'Given number is a multiple of 3 and 7'
+}
+else if(num %7 == 0){
+    document.getElementById('ans').innerHTML = 'Given number is a multiple of 7'
+}
+else if(num %3 == 0 ){
+    document.getElementById('ans').innerHTML = 'Given number is a multiple of 3'
+}
+    }
+</script>
+</html>

@@ -14,9 +14,3 @@ email().then(res=>{
 
 }).catch(err=>console.log(err))
 
-var numbers = [65, 44, 12, 4];
-numbers.forEach(myFunction)
-
-function myFunction(item, index, arr) {
-  arr[index] = item * 10;
-}
